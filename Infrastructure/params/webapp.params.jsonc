@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus2"
+        },
+        "appServicePlanName": {
+            "value": "<value>"
+        },
+        "keyVaultName": {
+            "value": "<value>"
+        },
+        "keyVaultResourceGroupName": {
+            "value": "<value>"
+        },
+        "containerRegistryName": {
+            "value": "<value>"
+        },
+        "containerRegistryResourceGroupName": {
+            "value": "<value>"
+        },
+        "containerImageName": {
+            // change your image name. I used keycloak/keycloak-msi to try to stay inline with the main keycloak repo
+            "value": "<value>.azurecr.io/keycloak/keycloak-msi:<image-tag>"
+        },
+        "appServiceName": {
+            "value": "<value>"
+        },
+        "sqlServerFQDN": {
+            "value": "<value>.database.windows.net"
+        }
+    }
+}
